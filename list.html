@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h2 style="color: blue;">Unorder List (ul)</h2>
-    <ul>
-        <li style="color: red;">Nikke</li>
-        <li style="font-size:x-large;">Honkai Impact</li>
-        <li style="background-color:rgb(112, 192, 224);">Blue Archive</li>
-        <li type="square">Azur Lane</li>
+<body class="p-8 font-sans min-h-screen bg-gradient-to-br from-blue-400 to-yellow-200">
+    <h2 class="text-blue-600 text-2xl font-bold mb-3">Unorder List (ul)</h2>
+    <ul class="list-disc list-inside space-y-1 mb-6">
+        <li class="text-red-500 shadow-md">Nikke</li>
+        <li class="text-xl">Honkai Impact</li>
+        <li class="bg-sky-300 w-fit px-1">Blue Archive</li>
+        <li class="list-[square]">Azur Lane</li>
     </ul>
-    <hr>
-    <h2 style="color: chocolate;">Ordered List (ol)</h2>
-    <ol type="a">
-         <li style="color: red;">Nikke</li>
-        <li style="font-size:x-large;">Honkai Impact</li>
-        <li type="I"style="background-color:rgb(112, 192, 224);">Blue Archive</li>
-        <li type="1">Azur Lane</li>
+    <hr class="mb-6">
+    <h2 class="text-amber-700 text-2xl font-bold mb-3">Ordered List (ol)</h2>
+    <ol class="list-[lower-alpha] list-inside space-y-1">
+        <li class="text-red-500">Nikke</li>
+        <li class="text-xl border bg-blue-200 w-fit px-2">Honkai Impact</li>
+        <li class="bg-sky-300 w-fit px-1">Blue Archive</li>
+        <li>Azur Lane</li>
     </ol>
 </body>
 </html>
